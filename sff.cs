@@ -319,6 +319,17 @@ namespace sff
 			ver = getVer();
 			getSffMsg();
 		}
+		
+		//销毁
+		public void close()
+		{
+			br.Close();
+			ms.Close();
+			fs.Close();
+			ver = -1;
+		
+		
+		}
 
 		//获取版本号 1或者2
 		private int getVer()
