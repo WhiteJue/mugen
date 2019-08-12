@@ -15,8 +15,8 @@ namespace memory
 {
 	class read
 	{
-		//打开进程，取得操作句柄
-		[DllImport("Kernel32.dll", EntryPoint = "OpenProcess", SetLastError = true)]
+	//打开进程，取得操作句柄
+	[DllImport("Kernel32.dll", EntryPoint = "OpenProcess", SetLastError = true)]
     	public static extern int OpenProcess(int com, int hwnd, int pid);
 
     	//关闭操作句柄
@@ -670,18 +670,7 @@ namespace memory
 			{
 				Console.WriteLine(m.stateNo(m.p1Addr()));
 				System.Threading.Thread.Sleep(500);
-			}
-
-
-			
+			}	
 		}
-
 	}
-
-	
-
-
-
-
-
 }
