@@ -24,11 +24,11 @@ namespace memory
     	public static extern bool CloseHandle(int hP);
 
     	//读取进程内存 整数型
-		[DllImport("Kernel32.dll", EntryPoint = "ReadProcessMemory", SetLastError = true)]
+	[DllImport("Kernel32.dll", EntryPoint = "ReadProcessMemory", SetLastError = true)]
     	public static extern bool ReadProcessMemory(int hP, int addr, out int ret, int len, int writeLen);
 
-    	//读取进程内存 小树型
-		[DllImport("Kernel32.dll", EntryPoint = "ReadProcessMemory", SetLastError = true)]
+    	//读取进程内存 小型数
+	[DllImport("Kernel32.dll", EntryPoint = "ReadProcessMemory", SetLastError = true)]
     	public static extern bool ReadProcessMemory(int hP, int addr, out float ret, int len, int writeLen);    	
 
     	//读取进程内存 文本型
